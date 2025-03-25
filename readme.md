@@ -120,4 +120,11 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+## Origin:
 
+Origin is a reference to the main branch of which a copy is made at local machines while cloning, details of which are contained in `.git` file. 
+
+- `git config remote origin` configures the origin address
+```sh
+git config remote origin <git url>
+```
