@@ -102,3 +102,22 @@ Pushing Changes to the github account
 ```sh
 git push new-project
 ```
+## Reset:
+
+For reverting a file status from being staged to untracked `git reset` command can be used, it is a useful command in git toolkit for managing the staging area.
+
+```sh
+$ echo "Hello world" >> Hello.md
+$ git add Hello.md
+$ git revert Hello.md
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
