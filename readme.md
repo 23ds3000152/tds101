@@ -37,7 +37,17 @@ Cloning can be done in three ways:
 ```sh
 git clone https://github.com/23ds3000152/tds101.git
 ```
+A Personal Access Token (PAT) is required to push to a remote repo, moreover I had to change the origin reference to the remote repo for authentication through PAT to work.
+
 ### SSH:
+
+Git repos can also be cloned via SSH method but first I had to generate a SSH(<a href = https://en.wikipedia.org/wiki/Secure_Shell>Secure Shell</a>) key using <a href =https://docs.github.com/en/authentication/connecting-to-github-with-ssh >`ssh-keygen` </a>, it generates two keys a private and public one and asks for location/name and a passphrase for securing the keys. 
+```sh
+ssh-keygen -t ed25519 -C user_name@email.com
+```
+
+After generating SSH key tokens I registered my public key with my remote repo and then with collaborator access rights I cloned the repo using SSH link.
+
 ```sh
 git clone https://github.com/23ds3000152/tds101.git
 ```
