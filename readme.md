@@ -38,7 +38,9 @@ Cloning can be done in three ways:
 git clone https://github.com/23ds3000152/tds101.git
 ```
 ### SSH:
-
+```sh
+git clone https://github.com/23ds3000152/tds101.git
+```
 
 ## Comit Changes
 
