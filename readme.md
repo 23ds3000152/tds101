@@ -51,6 +51,10 @@ After generating SSH key tokens I registered my public key with my remote repo a
 ```sh
 git clone https://github.com/23ds3000152/tds101.git
 ```
+For testing the SSH connection the following command can be used.
+```sh
+ssh -T git@github.com
+```
 
 ## Comit Changes
 
