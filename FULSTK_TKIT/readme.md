@@ -10,4 +10,4 @@ This is a beginner friendly guide for Web-Development, schedule of which is as f
 
  ### Theory:
 
- 
+ 1. 
