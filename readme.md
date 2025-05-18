@@ -144,3 +144,10 @@ Origin is a reference to the main branch of which a copy is made at local machin
 ```sh
 git config remote origin <git url>
 ```
+
+## steps to create a pull request
+Fork repo to your github account
+Then clone it
+Make changes 
+Push to your local version
+After pushing create a pull request
