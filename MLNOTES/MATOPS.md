@@ -4,10 +4,11 @@
 
 Given data $\{(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)\}, x_i \in \mathbb{R}^d, y_i \in \mathbb{R},   i= 1,2,\dots, n$ the loss function would is,
 
-$\begin{align}
+```math
+\begin{align}
 L(\theta)&= \frac{1}{2} \sum_{i=1}^{n}(x_i^T\theta - y_i)^2
-\end{align}$
-
+\end{align}
+```
 for minimizing L: Define 
 $
 \begin{array}{cc}
