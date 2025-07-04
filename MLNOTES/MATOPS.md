@@ -120,3 +120,48 @@ Instead of solving $min_\theta $
 
 ### Eigen Values:
 
+In case of a simple single parameter equation consider the differential equation:
+
+```math
+\frac{du}{dt} = au
+```
+Solution of this equation would be:
+
+```math
+u(t) = e^{at}u(0)
+```
+,now in case of a 2d parameter, a solution of the following form is required for these equations:
+
+```math
+v(t) = e^{\lambda t}y \quad \& \quad u(t) = e^{\lambda t}z\\\\
+
+or \quad u(t) = e^{\lambda t}x
+```
+where,
+
+```math
+\begin{align}
+x&= \begin{bmatrix}
+y \\ z
+\end{bmatrix}
+\end{align}
+```
+solution for these equations would be:
+
+```math
+\text{Ax} = \lambda x \longrightarrow \text{(eigen value equation)}
+```
+here $\lambda$ is the eigen value and $\text{x}\neq0$ is the eigen vector, here the eigen vector determines the orientation of the vector and the eigen value determines the size of the vector.
+
+![Eigen values and Eigen vectors](image-1.png)
+
+ solution of a linear system for an ordinary differential equation is tied to the solution of the eigen value equation, i.e ODE of the form $\frac{du}{dt} = Au$ using solutions of the form $u(t) = e^{\lambda t} x$ if $Ax = \lambda x$ is solvable.
+
+
+> It is a special case where the product of a matrix and vector generates a scalar product of the product meaning it won't change the direction of the vector.
+
+**Eigen Values:**
+
+
+
+
