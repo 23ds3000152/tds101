@@ -151,7 +151,7 @@ solution for these equations would be:
 ```math
 \text{Ax} = \lambda x \longrightarrow \text{(eigen value equation)}
 ```
-here $\lambda$ is the eigen value and $\text{x}\neq0$ is the eigen vector, here the eigen vector determines the orientation of the vector and the eigen value determines the size of the vector.
+here $\lambda$ is the **eigen value** and $\text{x}\neq0$ is the eigen vector, here the **eigen vector** determines the orientation of the vector and the eigen value determines the size of the vector.
 
 ![Eigen values and Eigen vectors](image-1.png)
 
@@ -160,8 +160,55 @@ here $\lambda$ is the eigen value and $\text{x}\neq0$ is the eigen vector, here 
 
 > It is a special case where the product of a matrix and vector generates a scalar product of the product meaning it won't change the direction of the vector.
 
-**Eigen Values:**
+**Finding the eigen values:**
 
+Considering the eigen value equation 
 
+```math
+\text{Ax} = \lambda x \longrightarrow \text{(eigen value equation)}\\
+```
+It has a characteristic equation:
 
+```math
+(\mathbb{A} -\lambda \mathbb{I})x = 0 \\
+\implies det(\mathbb{A} -\lambda \mathbb{I}) = 0 \quad \text{(Solution for singular matrices)}
+```
+by solving for the characteristic polynomial we can find the eigen values for $\lambda$ and by substituting it's value in the chaaracteristic equation we can obtain the eigen vector.
 
+If A is an $n \times n$ matrix, then the characteristic equation of the polynomial would have n solutions that is,
+
+$(A - \lambda_1)(A - \lambda_2)\dots(A - \lambda_n)=0 \implies \mathbb{x}$ lies in the null space of $\mathbb{A} -\lambda \mathbb{I} \\$ that is, $\quad x \in \mathbb{N}(\mathbb{A} -\lambda \mathbb{I})$
+
+### Similarity and diagonalization:
+
+A matrix A is diagonlizable if there exist an invertible matrix S such that,
+
+```math
+S^{-1}AS = \varLambda \quad \longrightarrow (diagonal \\ matrix)
+```
+suppose $\mathbb{A}$ is an $n \times n$ matrix then, A is diagonlizable if there exist n independent eigen vectors $\{x_1, x_2, x_3,\dots, x_n\}$,\\
+
+let, 
+
+```math
+\mathbb{S} = \begin{bmatrix}
+\vdots & \vdots & \dots & \vdots\\
+x_1 & x_2 & \dots & x_n\\
+\vdots & \vdots & \dots & \vdots
+\end{bmatrix} \\
+\implies \mathbb{AS} = \begin{bmatrix}
+\vdots & \vdots & \dots & \vdots\\
+A_1.x_1 & A_2.x_2 & \dots & A_n.x_n\\
+\vdots & \vdots & \dots & \vdots
+\end{bmatrix} =  \begin{bmatrix}
+\vdots & \vdots & \dots & \vdots\\
+\lambda.x_1 & \lambda.x_2 & \dots & \lambda.x_n\\
+\vdots & \vdots & \dots & \vdots
+\end{bmatrix} = \lambda.\mathbb{S}
+```
+
+So,
+ ```math
+ \mathbb{AS} = \mathbb{\varLambda S} \implies \mathbb{S^{-1}AS} = \mathbb{\varLambda}
+ ```
+where  $\varLambda$ is a diagonal matrix.
