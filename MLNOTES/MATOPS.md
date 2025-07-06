@@ -254,15 +254,8 @@ x.y = \bar{x}^T.y =  \bar{x_1}.y_1 + \bar{x_2}y_2 + \dots +  \bar{x_n}.y_n
 2.  $\quad x.(cy) = c(x.y)$
 3.  $\quad (cx).y = \bar{c} (x.y)$
 
-**Conjugate Transpose:**
-
-```math
-A^{*} =
-```
-conjugate transpose of A  
-```math
-A^{*} = \bar{A}^T = \overline{A^T}
-```  
+**Conjugate Transpose:** 
+$A^{\*} =$ conjugate transpose of A and $A^{*} = \bar{A}^T = \overline{A^T}$  
   
 > For a real matrix $A^{*} = A^T$
 
