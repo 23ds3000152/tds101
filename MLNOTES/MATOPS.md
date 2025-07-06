@@ -256,8 +256,8 @@ x.y = \bar{x}^T.y =  \bar{x_1}.y_1 + \bar{x_2}y_2 + \dots +  \bar{x_n}.y_n
 
 **Conjugate Transpose:**
 
-$A^{*} =$ conjugate transpose of A  
-$A^{*} = \bar{A}^T = \overline{A^T}$  
+```math A^{*} = ```conjugate transpose of A  
+```math A^{*} = \bar{A}^T = \overline{A^T}```  
   
 > For a real matrix $A^{*} = A^T$
 
