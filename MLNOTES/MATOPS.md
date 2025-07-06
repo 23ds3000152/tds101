@@ -265,7 +265,7 @@ $A^{*} = \bar{A}^T = \overline{A^T}$
 1.  $\quad (A^{*})^{*} = A$
 2.  $\quad (A.B)^{*} = B^{*}.A^{*}$  
 
-##Hermitian Matrices:##
+### Hermitian Matrices: ###
 
 A matrix $\mathbb{A}$ is Hermitian if,  
 ```math
@@ -273,4 +273,42 @@ A^{*} = A
 ```
 
 Hermitian matrices are equivalent to symmetric matrices in the complex vector spaces.  
+
+> ***Note: Diagonal entries of a Hermitian matrix are real***
+
+**Properties:**
+
+-   If A is a Hermitian matrix then all it's eigen values are real
+-   If A is Hermitian then the eigen vectors corresponding to different eigen values are orthogonal. i.e,  
+If $Ax = \lambda_1 x$ and $Ay = \lambda_2 y$, $\lambda_1 \neq \lambda_2$, then $x.y = \bar{x}^T.y = 0$
+-   If x & y are orthogonal vectors, then $\{x,y\}$ is a linearly independent set. 
+
+> The equivalent of Hermitian matrices in the "real" case is "real symmetric matrices", All "real symmetric" matrices are hermittian
+
+> If no eigen value is repeated then we have **"n"** distinct eigen values for an $n \times n$ matrix A, and **A is diagonlisable**.
+
+### Unitary Matrices: ###
+
+A matrix is unitary if it is square and has orthonormal columns,  
+**Real Case:** $\quad \mathbb{Q}^T.Q = \mathbb{I}$ $\implies \mathbb{Q}$ is orthogonal and $\mathbb{Q}^{-1} = \mathbb{Q}^T$  
+
+```math
+\iff \mathbb{Q} = \begin{bmatrix}
+| & | & \dots & | \\
+q_1 & q_2 & \dots & q_3 \\
+| & | & \dots & |
+\end{bmatrix}
+\implies q_i.q_j = 0 \ \forall q_i,q_j \in \mathbb{Q}\ \lVert q \rVert = 0 \ \forall i = 1,2,\dots,n 
+```
+
+**Complex Case:** $\quad \mathbb{U}^{*}.U = \mathbb{I} \implies \mathbb{U}$ is a Unitary and $\mathbb{U}^{-1} = \mathbb{U}^{*}$  
+
+**Properties of Unitary matrices:**
+
+1.  Length remains constant: $\lVert Ux \rVert$ = $\lVert x \rVert$ 
+
+2.  Eigen values of a **unitary matrix** have an absolute value 1, i.e, if $\lambda$ is an eigen value of $\mathbb{U}$, then $\lvert \lambda \rvert = 1$
+
+3.  Eigen vectors corresponding to different eigenvalues of a unitary matrix are orthogonal 
+
 
