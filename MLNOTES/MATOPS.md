@@ -177,7 +177,7 @@ by solving for the characteristic polynomial we can find the eigen values for $\
 
 If A is an $n \times n$ matrix, then the characteristic equation of the polynomial would have n solutions that is,
 
-$(A - \lambda_1)(A - \lambda_2)\dots(A - \lambda_n)=0 \implies \mathbb{x}$ lies in the null space of $\mathbb{A} -\lambda \mathbb{I} \\$ that is, $\quad x \in \mathbb{N}(\mathbb{A} -\lambda \mathbb{I})$
+$(A_1 - \lambda_1)(A_2 - \lambda_2)\dots(A_n - \lambda_n)=0 \implies \mathbb{x}$ lies in the null space of $\mathbb{A} -\lambda \mathbb{I} \\$ that is, $\quad x \in \mathbb{N}(\mathbb{A} -\lambda \mathbb{I})$
 
 ### Similarity and diagonalization:
 
@@ -212,3 +212,65 @@ So,
  \mathbb{AS} = \mathbb{\varLambda S} \implies \mathbb{S^{-1}AS} = \mathbb{\varLambda}
  ```
 where  $\varLambda$ is a diagonal matrix.
+
+**Special Cases:**
+
+1.  If $\lambda_1\ \&\ \lambda_2$ are eigen values with eigen vectors $x_1\ \& \ x_2$, where $\lambda_1\ = \lambda_2$ then, $x_1\ \& \ x_2$ are linearly independent.
+
+2.  For a matrix A if eigen values & vectors exist and $\mathbb{S^{-1}AS} = \mathbb{\varLambda}$ holds, then $\mathbb{S^{-1}A^{n}S} = \mathbb{\varLambda^{n}}$ i.e $A^n$ is also diagonlisable.
+
+
+### Complex Matrices $(\mathbb{C}^n)$:
+
+Complex matrices are the complex countreparts of $(\mathbb{R}^n)$,  
+i.e if $x_i \in \mathbb{C}^n$  
+then $\quad x_i = a + ib = re^{i.\theta} \quad $ and $\quad\bar{x_i} = a - ib = re^{-i.\theta}\quad$ (complex conjugate)  
+
+<img src="image-2.png" alt="Complex Numbers" width="300" height="200" style="vertical-align: -moz-middle-with-baseline">
+
+**Linear combination of complex vectors:**
+
+let $\{x_1, x_2, \dots, x_n\} \in \mathbb{C}^n$ then there linear combination would be,  
+
+$ c_1x_1 + c_2x_2 + \dots +  c_nx_n = 0 \quad$ and $(c_1, c_2,\dots ,c_n )$ are also complex numbers.
+
+**Inner Product and length:**
+
+In $\mathbb{C}^n$ Inner products are defined differently then vector inner products in $\mathbb{R}^n$, i.e  
+  
+```math
+x.y = \bar{x}^T.y =  \bar{x_1}.y_1 + \bar{x_2}y_2 + \dots +  \bar{x_n}.y_n
+```
+
+> ***Note:$\quad \bar{x}^T.y \neq \bar{y}^T.x$***
+
+**Length of a Complex Number:**
+```math
+\lVert x \rVert = \bar{x}^T.x \quad \& \quad \lVert x \rVert = 0 \iff x = 0
+```
+**Results:**
+
+1.  $\quad x.y = \overline{y.x}$
+2.  $\quad x.(cy) = c(x.y)$
+3.  $\quad (cx).y = \bar{c} (x.y)$
+
+**Conjugate Transpose:**
+
+$A^{*} =$ conjugate transpose of A  
+$A^{*} = \bar{A}^T = \overline{A^T}$  
+  
+> For a real matrix $A^{*} = A^T$
+
+**Results:**
+1.  $\quad (A^{*})^{*} = A$
+2.  $\quad (A.B)^{*} = B^{*}.A^{*}$  
+
+##Hermitian Matrices:##
+
+A matrix $\mathbb{A}$ is Hermitian if,  
+```math
+A^{*} = A
+```
+
+Hermitian matrices are equivalent to symmetric matrices in the complex vector spaces.  
+
