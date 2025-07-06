@@ -260,8 +260,8 @@ $A^{\*} =$ conjugate transpose of A and $A^{*} = \bar{A}^T = \overline{A^T}$
 > For a real matrix $A^{*} = A^T$
 
 **Results:**
-1.  $\quad (A^{*})^{*} = A$
-2.  $\quad (A.B)^{*} = B^{*}.A^{*}$  
+1. $(A^{*})^{*} = A$
+2. $(A.B)^{*} = B^{*}.A^{*}$
 
 ##Hermitian Matrices:##
 
