@@ -296,7 +296,7 @@ A matrix is unitary if it is square and has orthonormal columns,
 q_1 & q_2 & \dots & q_3 \\
 | & | & \dots & |
 \end{bmatrix}
-\implies q_i.q_j = 0 \ \forall q_i,q_j \in \mathbb{Q}\ \lVert q \rVert = 0 \ \forall i = 1,2,\dots,n 
+\implies q_i.q_j = 0 \ \forall q_i,q_j \in \mathbb{Q}\ \lVert q \rVert = 1 \ \forall i = 1,2,\dots,n 
 ```
 
 **Complex Case:** $\quad \mathbb{U}^{*}.U = \mathbb{I} \implies \mathbb{U}$ is a Unitary and $\mathbb{U}^{-1} = \mathbb{U}^{*}$  
@@ -309,4 +309,27 @@ q_1 & q_2 & \dots & q_3 \\
 
 3.  Eigen vectors corresponding to different eigenvalues of a unitary matrix are orthogonal 
 
+### Digonlization of Hermitian Matrices:
+>   Aim: Any $n \times n$ matrix is upper triangularized.
 
+
+A matrix $\mathbb{A}$ us unitarily diagonlizable if there exists a unitaary matrix $\mathbb{U}$ s.t.  
+```math
+\mathbb{A} = \mathbb{U} \varLambda \mathbb{U}^{*} \quad \text{is a diagonlizable matrix}
+```
+
+**Schur's Theorem:** 
+
+Any $n \times n$ matrix is similar to an upper triangular matrix T, i.e, there exists a unitary matrix $\mathbb{U}$ s.t.  
+```math
+
+\mathbb{A} = \mathbb{U}. \mathbb{T}.\mathbb{U}^{*}
+
+```
+
+**Proof:**
+Let, $P(\lambda)$ be the characteristic polynomial of A.  
+Let $\lambda_1$ be a root of $P(\lambda$)
+, and $z_1$ be the corresponding eigen vector.
+Extend $\{z_1\}$ to a basis, and make it orthonormal.  
+Let $\{z_1, u, v\}$ be the orthonormal basis. In particular we have $$z_1^{*}$$
