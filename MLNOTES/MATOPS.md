@@ -255,13 +255,17 @@ x.y = \bar{x}^T.y =  \bar{x_1}.y_1 + \bar{x_2}y_2 + \dots +  \bar{x_n}.y_n
 3.  $\quad (cx).y = \bar{c} (x.y)$
 
 **Conjugate Transpose:** 
-$A^{\*} =$ conjugate transpose of A and $A^{*} = \bar{A}^T = \overline{A^T}$  
+
+$A^{*}$ conjugate transpose of A and 
+$$
+A^{*} = \bar{A}^T = \overline{A^T}
+$$ 
   
 > For a real matrix $A^{*} = A^T$
 
 **Results:**
-1. $(A^{\*})^{\*} = A$
-2. $(A.B)^{\*} = B^{\*}.A^{\*}$
+1. $$(A^{*})^{*} = A$$
+2. $$(A.B)^{*} = B^{*}.A^{*}$$
 
 ### Hermitian Matrices: ###
 
@@ -299,7 +303,7 @@ q_1 & q_2 & \dots & q_3 \\
 \implies q_i.q_j = 0 \ \forall q_i,q_j \in \mathbb{Q}\ \lVert q \rVert = 1 \ \forall i = 1,2,\dots,n 
 ```
 
-**Complex Case:** $\quad \mathbb{U}^{*}.U = \mathbb{I} \implies \mathbb{U}$ is a Unitary and $\mathbb{U}^{-1} = \mathbb{U}^{*}$  
+**Complex Case:** $$\quad \mathbb{U}^{*}.U = \mathbb{I} \implies \mathbb{U}$$ is a Unitary and $$\mathbb{U}^{-1} = \mathbb{U}^{*}$$  
 
 **Properties of Unitary matrices:**
 
