@@ -330,10 +330,93 @@ Any $n \times n$ matrix is similar to an upper triangular matrix T, i.e, there e
 \mathbb{A} = \mathbb{U}. \mathbb{T}.\mathbb{U}^{*}
 
 ```
+Where, $\mathbb{T}$ is an **Upper Triangular Matrix**  
 
 **Proof:**
 Let, $P(\lambda)$ be the characteristic polynomial of A.  
 Let $\lambda_1$ be a root of $P(\lambda$)
 , and $z_1$ be the corresponding eigen vector.
 Extend $\{z_1\}$ to a basis, and make it orthonormal.  
-Let $\{z_1, u, v\}$ be the orthonormal basis. In particular we have $$z_1^{*}$$
+Let $\{z_1, u, v\}$ be the orthonormal basis.  
+In particular we have,
+```math
+\lVert z_1 \rVert =  \lVert u \rVert = \lVert v \rVert = 1  \\
+z_1^{*}.u = z_1^{*}.v = u.v = 0
+```
+```math
+
+\mathbb{U_1} = \begin{bmatrix}
+| & | & | \\
+z_1 & u & v \\
+| & | & | \\
+\end{bmatrix} \\[6pt]
+\implies \mathbb{AU_1} = \mathbb{A}.\begin{bmatrix}
+| & | & | \\
+z_1 & u & v \\
+| & | & | \\
+\end{bmatrix} = \begin{bmatrix}
+| & | & | \\
+A.z_1 & A.u & A.v \\
+| & | & | \\
+\end{bmatrix} = \begin{bmatrix}
+| & | & | \\
+\lambda_1.z_1 & A.u & A.v \\
+| & | & | \\
+\end{bmatrix} \\[6pt]
+\text{so,} \quad
+\mathbb{U_1^*.A.U_1} = \begin{bmatrix}
+- & \bar{z_1}^T & - \\
+- & \bar{u}^T & - \\
+- & \bar{v}^T & - \\
+\end{bmatrix}.\begin{bmatrix}
+| & | & | \\
+\lambda_1.z_1 & A.u & A.v \\
+| & | & | \\
+\end{bmatrix} = \begin{bmatrix}
+\bar{z_1}^T.\lambda_1.z_1 & * & * \\
+\bar{u_1}^T.\lambda_1.z_1 & B & B \\
+\bar{v}^T.\lambda_1.z_1 & B & B
+\end{bmatrix} \\[6pt]
+\quad\ = \begin{bmatrix}
+\lambda_1.\bar{z_1}^T.z_1 & * & * \\
+\lambda_1.\bar{u_1}^T.z_1 & B & B \\
+\lambda_1.\bar{v}^T.z_1 & B & B
+\end{bmatrix}
+= \begin{bmatrix}
+\lambda_1 & * & * \\
+0 & B & B \\
+0 & B & B
+\end{bmatrix} \\[6pt]
+
+\text{Repeat the proceedure for B to get an eigen value $\lambda_2$ of B \& a unitary matrix $\mathbb{P}$ s.t,} \\[6pt]
+
+\mathbb{P^*.B.P} = \begin{bmatrix}
+\lambda_1 & * \\
+0 & \lambda_2
+\end{bmatrix} \\[6pt]
+\text{Consider} \ \mathbb{U_2} = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & P_{11} & P_{12} \\
+0 & P_{21} & P_{22}
+\end{bmatrix} \iff\  \mathbb{U_2^*} = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & P_{11}^* & P_{12}^* \\
+0 & P_{21}^* & P_{22}^*
+\end{bmatrix}, \& \\[6pt]
+\implies \mathbb{U.U^*} = \mathbb{I} \quad \because \quad \mathbb{P.P^*} = \mathbb{I} \quad \text{(Unitary matrix)} \\[6pt]
+\text{Now,} \quad \mathbb{U_2^*.(U_1^*.A.U_1).U_2} = \mathbb{U_2^*}.\Bigg(\begin{bmatrix}
+\lambda_1 & * & * \\
+0 & B & B \\
+0 & B & B
+\end{bmatrix}\Bigg).\mathbb{U_2} = \begin{bmatrix}
+\lambda.U_2^{*}.U_2 & * & * \\
+0 & P_{11}^*.B.P_{11} & P_{12}^*.B.P_{12} \\
+0 & P_{11}^*.B.P_{11} & P_{12}^*.B.P_{12}
+\end{bmatrix} \\[6pt] = \begin{bmatrix}
+\lambda_1 & * & * \\ 
+0 & \lambda_2 & * \\
+0 & 0 & \lambda_3
+\end{bmatrix} = \mathbb{T} \quad \text{(Upper Triangular Matrix)}
+
+```
+
