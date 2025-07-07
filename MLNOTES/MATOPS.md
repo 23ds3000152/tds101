@@ -340,7 +340,7 @@ Extend $\{z_1\}$ to a basis, and make it orthonormal.
 Let $\{z_1, u, v\}$ be the orthonormal basis.  
 In particular we have,
 ```math
-\lVert z_1 \rVert =  \lVert u \rVert = \lVert v \rVert = 1  \\
+\lVert z_1 \rVert =  \lVert u \rVert = \lVert v \rVert = 1  \\  
 z_1^{*}.u = z_1^{*}.v = u.v = 0
 ```
 
@@ -386,10 +386,11 @@ A.z_1 & A.u & A.v \\
 \lambda_1 & * & * \\
 0 & B & B \\
 0 & B & B
-\end{bmatrix} \\[6pt]
+\end{bmatrix}
+```
+Repeat the proceedure for B to get an eigen value $\lambda_2$ of B \& a unitary matrix $\mathbb{P}$ s.t,}
 
-\text{Repeat the proceedure for B to get an eigen value $\lambda_2$ of B \& a unitary matrix $\mathbb{P}$ s.t,} \\[6pt]
-
+```math
 \mathbb{P^*.B.P} = \begin{bmatrix}
 \lambda_1 & * \\
 0 & \lambda_2
@@ -417,6 +418,5 @@ A.z_1 & A.u & A.v \\
 0 & \lambda_2 & * \\
 0 & 0 & \lambda_3
 \end{bmatrix} = \mathbb{T} \quad \text{(Upper Triangular Matrix)}
-
 ```
 
