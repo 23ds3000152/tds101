@@ -343,8 +343,8 @@ In particular we have,
 \lVert z_1 \rVert =  \lVert u \rVert = \lVert v \rVert = 1  \\
 z_1^{*}.u = z_1^{*}.v = u.v = 0
 ```
-```math
 
+```math
 \mathbb{U_1} = \begin{bmatrix}
 | & | & | \\
 z_1 & u & v \\
