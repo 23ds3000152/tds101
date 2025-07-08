@@ -420,3 +420,11 @@ Repeat the proceedure for B to get an eigen value $\lambda_2$ of B \& a unitary 
 \end{bmatrix} = \mathbb{T} \quad \text{(Upper Triangular Matrix)}
 ```
 
+### Spectral Theorem:
+
+If $\mathbb{A}$ is an $n \times n$ real symmetric matrix. Then,
+
+1.  All eigen values of $\mathbb{A}$ are real
+2.  $\mathbb{A}$ is orthogonally diagonlizable, i.e., $\exists$ an orthogonal matrix $\mathbb{Q}$ such that $$(Q^T.Q = I)$$ and $$ \mathbb{A} = \mathbb{Q. \varLambda. Q^T} $$
+
+$\mathbb{Q}$ : Matrix formed by eigen vectors of A.
