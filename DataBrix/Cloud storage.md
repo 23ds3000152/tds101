@@ -57,7 +57,59 @@ Azure data lake is set of capabilities that augment big data analytics like:
 -   
 
 
-### Databricks Datalake:
+### Azure Databricks:
 
-### Unity Catalog:
+Azure databricks is unified open analytics platform that combines unique capabilities of data warehouses and data lakes for bulding, deploying and maintaining enterprise grade data, Analytics and ML applications at scale.  
+
+Key technologies native to the databricks ecosystem are :
+
+-   Delta lake & Delta sharing
+-   Apache spark & Structured streaming
+-   ML Flow
+-   Redash
+-   Unity catalog
+
+<p align="center">
+<img alt="Data Bricks architecture" src="{06534CEE-2DBF-4288-8B46-8703F7AE3588}.png" height=170px width=300px>
+</p>
+
+Databricks combines Apache spark and Delta lakes to create a fast and reliable ETL experience where SQL, Python and Scala can be utilised to compose ETL logics and orchestrate scheduled jobs effortlessly.
+
+### Delta Lake:
+
+The term Delta was conceived with Delta lake for managing transactional real-time data and batch big data processing. Delta lake extends the capabilities of parquet files by adding a file-based transaction log layer over the data for providing capabilities such as ACID transactions, data versioning ,rollback capabilities and scalable metadata handling.
+
+<a title = "Delta Table reference" href = "https://docs.delta.io/latest/table-properties.html#">-   Delta table properties reference</a>
+
+### Azure Databricks Architecture:
+
+Azure Databricks operates out of a **Control Plane** and a **Compute Plan**, seperating the computational processes from the interactive user side of operations.
+
+<p align="center">
+<img alt = "Databricks HL architecture" src = "image-2.png" height="200px" width = "400px">
+</p>
+
+**Data lakehouse architecture:**
+For BI and SQL operations data lakehouse architecture operates in the following manner:
+<p align="center">
+<img alt="Data lakehouse architecture for BI & SQL analytics" src="image-3.png" height="200px" width = "400px">
+</p>
+
+### Compute:
+
+Azure databricks compute refers to the compute resources associated with your Azure databricks workspace.Users need access to AD compute to run data engineering, data analytics and data science workloads, such as production ETL pipelines, streaming analytics, Ad-hoc analytics, ML and AI.
+
+**Types of Compute resources:**
+
+1.  Serverless compute for analytics
+2.  Serverless compute for jobs
+3.  All purpose compute
+4.  Jobs compute
+5.  Instance compute
+6.  Serverless SQL warehouse
+7.  Classic SQL warehouse
+
+
+
+
 
