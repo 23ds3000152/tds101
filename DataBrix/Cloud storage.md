@@ -109,6 +109,33 @@ Azure databricks compute refers to the compute resources associated with your Az
 6.  Serverless SQL warehouse
 7.  Classic SQL warehouse
 
+### Unity Catalog:
+
+Unity catalog is a centralized data catalog that provides access control, auditing, lineage, quality monitoring, data discovery capabilities across all user workspaces.
+
+Key features of Unity catalog:
+
+-   Define once secure everywhere: single place to administer data governance policies that are valid across all workspaces
+
+-   **Standards-compliant security model:** Based on standard ANSI-SQL security model, allowing administrators to grant access to their existing data lake using familiar syntax
+
+-   **Built in auditing and lineage:** Records user level audit log and maintains data lineage, thus users can view who has accessed their data and also control versions of it.
+
+-   **Data discovery:** Unified platform for taging and searching data.
+
+-   **System tables:** Allows access to accont's operational data (Audit logs, billable usage & lineage)
+
+**Unity Catalog Object model:**
+<p>
+<img alt="Unity catalog object model" src="image-4.png" height="170px" width="380px">
+</p>
+
+Unity catalog metastore contains three level object hierarchy, catalog -> Schemas (databases) -> Data & AI models, objects in unity catalog can be accessed by ```catalog.schema.table_name```
+
+
+### Data bricks Access control lists:
+
+Unity 
 
 
 
