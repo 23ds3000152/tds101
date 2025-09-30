@@ -26,10 +26,11 @@ $$\begin{align}
 #### Classification:
 
 Suppose $T = {(x^1, y^1), (x^2, y^2), \dots, (x^n, y^n)}$ be training data, such that $x^i \in \mathbb{R}$ and $y^i \in (1,-1)$  and a linear regression algorithm would generate a model $f´$ $\mathbb{R^d} \to \mathbb{R}$ that would  minimize the loss function, \
-$$\begin{align}Loss = \frac{1}{n}\sum_{i=1}(f(x^i) \neq y^i)\end{align}$$ 
+$$ \begin{align}Loss = \frac{1}{n}\sum_{i=1}(f(x^i) \neq y^i)\end{align} $$ 
 where,
 
-$$f(x) = \sin(w^T.x + b)$$ is the hypothesis function. which generally is generally used to produce binary output ranging between {-1, 1} called as a **Linear Seperator**.
+$$ f(x) = sign(w^T.x + b) $$ is the activation function which produces binary output depending on the final value of distance between x and y also called as a **Linear Seperator**.
+
 
 > Here loss function is the fraction of misclassified values.
 
