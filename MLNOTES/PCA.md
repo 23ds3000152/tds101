@@ -83,3 +83,12 @@ x_1 & \dots & x_n \\
 \vdots & \dots & \vdots
 \end{bmatrix}
 ```
+
+
+
+
+
+
+
+
+### Positivity

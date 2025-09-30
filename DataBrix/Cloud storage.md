@@ -137,6 +137,21 @@ Unity catalog metastore contains three level object hierarchy, catalog -> Schema
 
 Unity 
 
+-   inner
+-   brush & toothpaste
+-   inner wears
+-   trimmer
+-   charger
+-   lower
+-   shorts
+-   tshirts (4 polos, 1 round neck)
+-   shirt (1 shirt)
+-   jeans (2)
+-   wallet (DL, voterID, Aadhar)
+-   umbrella
+-   pen
+-   towel
+-   bottle
 
 
 
