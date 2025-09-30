@@ -26,7 +26,7 @@ $$\begin{align}
 #### Classification:
 
 Suppose $T = {(x^1, y^1), (x^2, y^2), \dots, (x^n, y^n)}$ be training data, such that $x^i \in \mathbb{R}$ and $y^i \in (1,-1)$  and a linear regression algorithm would generate a model $f´$ $\mathbb{R^d} \to \mathbb{R}$ that would  minimize the loss function, \
-$$ \begin{align}Loss = \frac{1}{n}\sum_{i=1}(f(x^i) \neq y^i)\end{align} $$ 
+$$ \begin{aligned}Loss = \frac{1}{n}\sum_{i=1}(f(x^i) \neq y^i)\end{aligned} $$ 
 where,
 
 $$ f(x) = sign(w^T.x + b) $$ is the activation function which produces binary output depending on the final value of distance between x and y also called as a **Linear Seperator**.
