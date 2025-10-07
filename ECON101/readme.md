@@ -10,4 +10,11 @@ certain quantity of some one commodity or other, such as he imagined few people 
 
 In the above statement Adam Smith wisely defines the critical challenge faced by earlier societies where need for a common traded currency should arrise and in order to resolve such conflicts advance societies developed currencies made of metals like coins found in Harrapa and Mohenajodaro excavations, iron bars used by romans etc. 
 
-Advent of currency 
+This content aims to explore:
+-   Fundamentals of Micro Economics
+-   Fundamentals of Macro Economics
+-   Economic models and ideologies
+-   Economic concepts involved in risk modelling and quantification
+-   Different types of Asset classes and asset pricing models
+-   BASEL 3 & IFRS9 norms for risk modelling and assesment
+
