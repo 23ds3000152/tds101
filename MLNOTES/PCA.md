@@ -83,12 +83,36 @@ x_1 & \dots & x_n \\
 \vdots & \dots & \vdots
 \end{bmatrix}
 ```
-
-
-
-
-
-
-
-
 ### Positivity
+
+
+## Principle Component Analysis:
+
+### Feature Selection:
+
+Start with as many features as you can collect and then find a good set of features.
+
+### PCA (Principle Component Analysis):
+
+Project given data into a smaller dimension space such that 
+1.  reconstruction (Precise) is minimized or 
+2.  variance of the projected data is maximized.
+
+**Problem Formulation:**
+
+**Given:** Dataset D= {x_1, x_2, $\dots$, x_n}, $\mathbb{x_i}\ \in \mathbb{R_n}$  
+**Goal:** Project D onto an m-dimensional subspace "m - input parametrs"
+
+**Ariving at the PCA Algorithm:**
+
+Let $ \mathbb{B} = \{u_1, u_2,\dots, u_m\}$ be an orthonormal basis for an m-dimensional subspace  
+
+Extend B for orthonormal basis for $\mathbb{R}^d$, let this extended basis be $\mathbb{B'}$ = $\{u_1, u_2,\dots, u_m,u_{m+1}, \dots, u_d\}$  
+
+Any vector $x \in \mathbb{R}^d$ can be written using $\mathbb{B'}$, we have
+
+```math
+x_i = \alpha_1.u_1 + \alpha_2.u_2 + \dots + \alpha_d.u_d
+```
+
+where $\alpha_i = x_j^T.u_j$ $\forall$ j $\in$ <!--  -->
